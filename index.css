@@ -1,0 +1,73 @@
+body{
+    font-family: "Emilys Candy", serif;
+    background-image: url(./img/2.png);
+}
+.mainContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+    gap: 40px;
+}
+
+h1{
+    font-size: 90px;
+    font-stretch: expanded;
+    letter-spacing: 2px;
+    color:whitesmoke;
+    padding:5%;
+}
+h1:hover{
+    color: #ff4d4d;
+}
+
+.btn{
+ /* Red color for the Valentine's theme */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: 'Emilys Candy', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+.btn:hover{
+    background-color:#ff4d4d; 
+    box-shadow: 0 4px 10px #ff4d4d;
+    cursor: pointer;
+}
+
+#no{
+    position: relative;
+    transition:transform 0.1s ease;
+    top:40px;
+}
+
+.btnContainer{
+    height:400px;
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    h1 {
+        padding:4%;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .btnContainer {
+        height: 250px;
+    }
+}
